@@ -1,5 +1,9 @@
 # The URL the site will be built for
 base_url = "https://portfolio-sebastiankrallinger.com"
+title = "Krallinger Sebastian"
+description = "Top 25 Schüler 5AHINF"
+default_language = "de"       
+theme = "zola-grayscale"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true

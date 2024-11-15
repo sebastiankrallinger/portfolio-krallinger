@@ -1,0 +1,193 @@
+{% extends "zola-grayscale/templates/index.html" %}
+
+{% block masthead %}
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+            <div class="d-flex justify-content-center">
+                <div class="text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">{% block masthead_title %}{{ config.title }}{% endblock masthead_title %}</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">{% block masthead_description %}{{ config.description }}{% endblock masthead_description %}</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+{% endblock masthead %}
+
+{% block about %}
+    <section class="about-section text-center" id="{% block about_id %}about{% endblock about_id %}">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="text-white mb-4">{% block about_title %}Über mich{% endblock about_title %}</h2>
+                    <p class="text-white-50">
+                        {% block about_description %}
+                            
+                        {% endblock about_description %}
+                    </p>
+                </div>
+            </div>
+            {% block about_image %}
+            <img class="img-fluid" src="{{ get_url(path="assets/img/ipad.png") }}" alt="..." />
+            {% endblock about_image %}
+        </div>
+    </section>
+{% endblock about %}
+
+{% block projects %}
+    <section class="projects-section bg-light" id="{% block projects_id %}projects{% endblock projects_id %}">
+        <div class="container px-4 px-lg-5">
+            {% block feature_project %}
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                <div class="col-xl-8 col-lg-7">
+                    {% block feature_project_thumbnail %}
+                    <img class="img-fluid mb-3 mb-lg-0" src="{{ get_url(path="assets/img/bg-masthead.jpg") }}" alt="...">
+                    {% endblock feature_project_thumbnail %}
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    {% block feature_project_content %}
+                    <div class="featured-text text-center text-lg-left">
+                        <a style="text-decoration: none;" href="https://github.com/sebastiankrallinger/Diplomarbeit_Garagenparkmanager_Krallinger_Kirchtag.git" target="_blank">
+                            <h4>{% block feature_project_title %}Diplomarbeit - Garagenparkmanager{% endblock feature_project_title %}</h4>
+                        </a>                        
+                        <p class="text-black-50 mb-0">
+                        {% block feature_project_description %}
+                        Die Verwaltung von Garagenparkplätzen erfolgt derzeit manuell und ist zeitaufwendig. Die
+                        Vermieter müssen sich mit den Kunden per E-Mail oder Telefon in Verbindung setzen, um
+                        beispielsweise Verträge, Rechnungen und Betriebskosten zu besprechen. Es besteht auch
+                        keine Möglichkeit, Garagen online zu visualisieren oder den Kunden einen Überblick über
+                        die Verfügbarkeit der Garagen zu geben. Mit der Entwicklung einer Webapplikation können
+                        diese Prozesse automatisiert und optimiert werden.       
+                        {% endblock feature_project_description %}
+                        </p>
+                    </div>
+                    {% endblock feature_project_content %}
+                </div>
+            </div>
+{% endblock feature_project %}
+{% block project_1 %}
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-lg-6">
+                    {% block project_1_thumbnail %}
+                    <img class="img-fluid" src="{{ get_url(path="assets/img/demo-image-01.jpg") }}" alt="...">
+                    {% endblock project_1_thumbnail %}
+                </div>
+                <div class="col-lg-6">
+                    {% block project_1_content %}
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <a style="text-decoration: none;" href="https://github.com/sebastiankrallinger/4POS_Semesterprojekt.git" target="_blank">
+                                    <h4>{% block project_1_title %}POS-Projekt-TinyWhatsApp{% endblock project_1_title %}</h4>
+                                </a>                                 
+                                <p class="mb-0 text-white-50">
+                                {% block project_1_description %}
+                                    Die Chatapp, Tiny Whatsapp, besteht aus einer Client-Client-Server-Architektur. 
+                                    Es wurde ein Client als WPF-Anwendung und ein Client als WebApp implementiert. 
+                                    Diese kommunizieren mit dem Spring Boot Server und werden von einem Websocket über neue Nachrichten informiert. 
+                                    Die Benutzerdaten und Chats werden in einer MongoDB Datenbank gespeichert.                                
+                                {% endblock project_1_description %}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endblock project_1_content %}
+                </div>
+            </div>
+            {% endblock project_1 %}
+            {% block project_2 %}
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-lg-6">
+                    {% block project_2_thumbnail %}
+                    <img class="img-fluid" src="{{ get_url(path="assets/img/demo-image-02.jpg") }}" alt="...">
+                    {% endblock project_2_thumbnail %}
+                </div>
+                <div class="col-lg-6 order-lg-first">
+                    {% block project_2_content %}
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <a style="text-decoration: none;" href="https://github.com/sebastiankrallinger/SYP_GRUPPE_3_2024.git" target="_blank">
+                                    <h4>{% block project_2_title %}SYP-Projekt-mBot2{% endblock project_2_title %}</h4>
+                                </a>                                 
+                                <p class="mb-0 text-white-50">
+                                {% block project_2_description %}
+                                Der mBot2 von mblock ist ein Roboter, der viele verschiedene Sensoren besitzt, mit denen er mit der Außenwelt kommunizieren kann. 
+                                Programmiert wird er über MicroPython, eine abgespeckte Variante von Python3. 
+                                Über einen cyberpi, eine „Controllereinheit“, welche auf den mBot2 gesteckt wird, kommuniziert man mit dem Roboter. 
+                                Durch die verschiedenen Sensoren sollen verschiedenen Anforderungen, wie zum Beispiel die Steuerung über ein Endgerät, anzeige des Status mittels LEDs oder die Implementierung eines Sicherheitsmodus, realisiert werden. 
+                                Das Projekt wird mit SCRUM umgesetzt.
+                            {% endblock project_2_description %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endblock project_2_content %}
+                </div>
+            </div>
+            {% endblock project_2 %}
+            {% block project_3 %}
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-lg-6">
+                    {% block project_3_thumbnail %}
+                    <img class="img-fluid" src="{{ get_url(path="assets/img/demo-image-01.jpg") }}" alt="...">
+                    {% endblock project_3_thumbnail %}
+                </div>
+                <div class="col-lg-6">
+                    {% block project_3_content %}
+                    <div class="bg-black text-center h-100 project">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-left">
+                                <a style="text-decoration: none;" href="https://github.com/sebastiankrallinger/SYP_Gruppe3_CaSiiino.git" target="_blank">
+                                    <h4>{% block project_3_title %}SYP-Projekt-CaSiiino{% endblock project_3_title %}</h4>
+                                </a>                                 
+                                <p class="mb-0 text-white-50">
+                                {% block project_3_description %}
+                                    Im Zuge eines Schulprojekts, erstellten wir ein Casino mit verschiedenen Minigames.<br>
+                                    1.	4 Minigames (Roulette, Pferderennen, UNO, 11 m)<br>
+                                    2.	KI (Gegner)<br>
+                                    3.	2D – Oberfläche<br>
+                                    4.	Highscore speichern
+                                {% endblock project_3_description %}     
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endblock project_3_content %}
+                </div>
+            </div>
+        {% endblock project_3 %}
+        </div>
+    </section>
+{% endblock projects %}
+
+{% block signup %}{% endblock signup %}
+
+{% block contact %}
+    <!-- Contact -->
+    <section class="contact-section bg-black" id="{% block contact_id %}contact{% endblock contact_id %}">
+        <div class="container px-4 px-lg-5">
+            {% block contact_contact %}
+            <div class="row gx-4 gx-lg-5">
+            {% for item in contact.contact %}
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas {{ item.icon }} text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">{{ item.name }}</h4>
+                        <hr class="my-4 mx-auto" />
+                        <div class="small text-black-50">{{ item.address|safe }}</div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            </div>
+            {% endblock contact_contact %}
+            {% block contact_social %}
+            <div class="social d-flex justify-content-center">
+                {% for item in contact.social %}
+                <a class="mx-2" href="{{ item.url | safe }}"><i class="fab {{ item.icon }}" aria-hidden="true"></i></a>
+                {% endfor %}
+            </div>
+            {% endblock contact_social %}
+        </div>
+    </section>
+    {% endblock contact %}

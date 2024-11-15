@@ -1,0 +1,9 @@
+[[item]]
+name = "Über mich"
+path = "#about"
+[[item]]
+name = "Projekte"
+path = "#projects"
+[[item]]
+name = "Kontakt"
+path = "#contact"

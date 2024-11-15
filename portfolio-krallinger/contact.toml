@@ -1,0 +1,18 @@
+[[contact]]
+name = "Located at"
+address = "St. Martin am Tennengebirge"
+icon = "fa-map-marked-alt"
+[[contact]]
+name = "Email"
+address = """<a href="#!">s.krallinger@sbg.at</a>"""
+icon = "fa-envelope"
+[[contact]]
+name = "Phone"
+address = "+43 6602384312"
+icon = "fa-mobile-alt"
+[[social]]
+icon = "fa-instagram"
+url = "https://www.instagram.com/sebastiankrallinger/"
+[[social]]
+icon = "fa-github"
+url = "https://github.com/sebastiankrallinger"
