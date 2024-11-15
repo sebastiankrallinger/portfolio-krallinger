@@ -21,7 +21,7 @@
                     <h2 class="text-white mb-4">{% block about_title %}Über mich{% endblock about_title %}</h2>
                     <p class="text-white-50">
                         {% block about_description %}
-                            
+                        
                         {% endblock about_description %}
                     </p>
                 </div>
@@ -40,7 +40,7 @@
             <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                 <div class="col-xl-8 col-lg-7">
                     {% block feature_project_thumbnail %}
-                    <img class="img-fluid mb-3 mb-lg-0" src="{{ get_url(path="assets/img/bg-masthead.jpg") }}" alt="...">
+                    <img class="img-fluid mb-3 mb-lg-0" src="{{ get_url(path="assets/img/garagenparkmanager.png") }}" alt="...">
                     {% endblock feature_project_thumbnail %}
                 </div>
                 <div class="col-xl-4 col-lg-5">
@@ -68,7 +68,7 @@
             <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                 <div class="col-lg-6">
                     {% block project_1_thumbnail %}
-                    <img class="img-fluid" src="{{ get_url(path="assets/img/demo-image-01.jpg") }}" alt="...">
+                    <img class="img-fluid" src="{{ get_url(path="assets/img/tinyWhatsapp.png") }}" alt="...">
                     {% endblock project_1_thumbnail %}
                 </div>
                 <div class="col-lg-6">
@@ -98,7 +98,7 @@
             <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                 <div class="col-lg-6">
                     {% block project_2_thumbnail %}
-                    <img class="img-fluid" src="{{ get_url(path="assets/img/demo-image-02.jpg") }}" alt="...">
+                    <img class="img-fluid" src="{{ get_url(path="assets/img/mbot.png") }}" alt="...">
                     {% endblock project_2_thumbnail %}
                 </div>
                 <div class="col-lg-6 order-lg-first">
@@ -128,7 +128,7 @@
             <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                 <div class="col-lg-6">
                     {% block project_3_thumbnail %}
-                    <img class="img-fluid" src="{{ get_url(path="assets/img/demo-image-01.jpg") }}" alt="...">
+                    <img class="img-fluid" src="{{ get_url(path="assets/img/casiiino.png") }}" alt="...">
                     {% endblock project_3_thumbnail %}
                 </div>
                 <div class="col-lg-6">
@@ -142,7 +142,7 @@
                                 <p class="mb-0 text-white-50">
                                 {% block project_3_description %}
                                     Im Zuge eines Schulprojekts, erstellten wir ein Casino mit verschiedenen Minigames.<br>
-                                    1.	4 Minigames (Roulette, Pferderennen, UNO, 11 m)<br>
+                                    1.	3 Minigames (Roulette, Pferderennen, 11 m)<br>
                                     2.	KI (Gegner)<br>
                                     3.	2D – Oberfläche<br>
                                     4.	Highscore speichern
@@ -162,7 +162,6 @@
 {% block signup %}{% endblock signup %}
 
 {% block contact %}
-    <!-- Contact -->
     <section class="contact-section bg-black" id="{% block contact_id %}contact{% endblock contact_id %}">
         <div class="container px-4 px-lg-5">
             {% block contact_contact %}
