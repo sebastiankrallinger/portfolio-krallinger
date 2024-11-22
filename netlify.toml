@@ -1,5 +1,5 @@
 [build]
-  command = "zola build"
+  command = "cd portfolio-krallinger && zola build"
   publish = "public"
 
 
