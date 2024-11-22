@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://portfolio-sebastiankrallinger.com"
+base_url = "https://portfolio-sebastiankrallinger.netlify.app"
 title = "Krallinger Sebastian"
 description = "Top 25 Schüler 5AHINF"
 default_language = "de"       
