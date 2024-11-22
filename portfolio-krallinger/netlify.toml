@@ -1,6 +1,6 @@
 [build]
-  command = "curl -sSf https://get.zola.rs | sh && ./zola build"
-  publish = "public"
+command = "zola build"
+publish = "public"
 
 [context.production.environment]
-  GIT_SUBMODULE_STRATEGY = "recursive"
+GIT_SUBMODULE_STRATEGY = "recursive"
