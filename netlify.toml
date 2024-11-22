@@ -1,6 +1,6 @@
 [build]
   command = "cd portfolio-krallinger && zola build"
-  publish = "public"
+  publish = "portfolio-krallinger/public"
 
 
 [build.environment]
