@@ -1,5 +1,5 @@
 [build]
-command = "curl -sSf https://get.zola.rs | sh && ./zola build"
+command = "curl -sSf https://get.zola.rs | sh && ~/.cargo/bin/zola build"
 publish = "public"
 
 [context.production.environment]
