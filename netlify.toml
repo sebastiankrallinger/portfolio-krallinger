@@ -4,4 +4,4 @@
 
 
 [build.environment]
-ZOLA_VERSION = "zola 0.19.2"
+ZOLA_VERSION = "0.19.2"
