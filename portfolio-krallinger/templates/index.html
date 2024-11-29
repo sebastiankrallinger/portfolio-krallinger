@@ -16,14 +16,23 @@
 {% block about %}
     <section class="about-section text-center" id="{% block about_id %}about{% endblock about_id %}">
         <div class="container px-4 px-lg-5">
+            {% block about_image %}
+            <img class="img" src="{{ get_url(path="assets/img/aboutme.jpg") }}" alt="..." />
+            {% endblock about_image %}
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8">
                     <h2 class="text-white mb-4">{% block about_title %}Über mich{% endblock about_title %}</h2>
                 </div>
             </div>
-            {% block about_image %}
-            <img class="img" src="{{ get_url(path="assets/img/aboutme.jpg") }}" alt="..." />
-            {% endblock about_image %}
+            <p class="text-white-50">
+                {% block about_description %}
+                Mein Name ist Sebastian Krallinger und ich bin Schüler an der HTL Saalfelden, wo ich mich auf Informatik konzentriere. 
+                Während meiner Ausbildung habe ich umfassende Kenntnisse in Programmiersprachen wie Java, C#, SQL sowie in Webtechnologien wie HTML, CSS und JavaScript erworben. 
+                Besonders spannend finde ich die Entwicklung von Lösungen, die sowohl technische Herausforderungen meistern als auch praktische Probleme lösen. 
+                Ich habe bereits an verschiedenen Projekten gearbeitet, darunter ein Garagenparkmanager zur Optimierung von Verwaltungsprozessen und eine Chat-App, die mit einer MongoDB-Datenbank und einem Spring Boot-Server kommuniziert. 
+                In meiner Freizeit spiele ich leidenschaftlich Fußball, was mir hilft, Teamarbeit und strategisches Denken weiter zu fördern.
+                {% endblock about_description %}
+            </p>
         </div>
     </section>
 {% endblock about %}
@@ -41,7 +50,7 @@
                 <div class="col-xl-4 col-lg-5">
                     {% block feature_project_content %}
                     <div class="featured-text text-center text-lg-left">
-                        <a style="text-decoration: none;" href="https://github.com/sebastiankrallinger/Diplomarbeit_Garagenparkmanager_Krallinger_Kirchtag.git" target="_blank">
+                        <a style="text-decoration: underline;" href="https://github.com/sebastiankrallinger/Diplomarbeit_Garagenparkmanager_Krallinger_Kirchtag.git" target="_blank">
                             <h4>{% block feature_project_title %}Diplomarbeit - Garagenparkmanager{% endblock feature_project_title %}</h4>
                         </a>                        
                         <p class="text-black-50 mb-0">
@@ -51,7 +60,7 @@
                         beispielsweise Verträge, Rechnungen und Betriebskosten zu besprechen. Es besteht auch
                         keine Möglichkeit, Garagen online zu visualisieren oder den Kunden einen Überblick über
                         die Verfügbarkeit der Garagen zu geben. Mit der Entwicklung einer Webapplikation können
-                        diese Prozesse automatisiert und optimiert werden.       
+                        diese Prozesse automatisiert und optimiert werden.  
                         {% endblock feature_project_description %}
                         </p>
                     </div>
@@ -71,7 +80,7 @@
                     <div class="bg-black text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <a style="text-decoration: none;" href="https://github.com/sebastiankrallinger/4POS_Semesterprojekt.git" target="_blank">
+                                <a style="text-decoration: underline;" href="https://github.com/sebastiankrallinger/4POS_Semesterprojekt.git" target="_blank">
                                     <h4>{% block project_1_title %}POS-Projekt-TinyWhatsApp{% endblock project_1_title %}</h4>
                                 </a>                                 
                                 <p class="mb-0 text-white-50">
@@ -101,7 +110,7 @@
                     <div class="bg-black text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-right">
-                                <a style="text-decoration: none;" href="https://github.com/sebastiankrallinger/SYP_GRUPPE_3_2024.git" target="_blank">
+                                <a style="text-decoration: underline;" href="https://github.com/sebastiankrallinger/SYP_GRUPPE_3_2024.git" target="_blank">
                                     <h4>{% block project_2_title %}SYP-Projekt-mBot2{% endblock project_2_title %}</h4>
                                 </a>                                 
                                 <p class="mb-0 text-white-50">
@@ -131,7 +140,7 @@
                     <div class="bg-black text-center h-100 project">
                         <div class="d-flex h-100">
                             <div class="project-text w-100 my-auto text-center text-lg-left">
-                                <a style="text-decoration: none;" href="https://github.com/sebastiankrallinger/SYP_Gruppe3_CaSiiino.git" target="_blank">
+                                <a style="text-decoration: underline;" href="https://github.com/sebastiankrallinger/SYP_Gruppe3_CaSiiino.git" target="_blank">
                                     <h4>{% block project_3_title %}SYP-Projekt-CaSiiino{% endblock project_3_title %}</h4>
                                 </a>                                 
                                 <p class="mb-0 text-white-50">
