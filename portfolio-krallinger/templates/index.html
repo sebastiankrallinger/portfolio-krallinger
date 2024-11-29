@@ -19,15 +19,10 @@
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-lg-8">
                     <h2 class="text-white mb-4">{% block about_title %}Über mich{% endblock about_title %}</h2>
-                    <p class="text-white-50">
-                        {% block about_description %}
-                        
-                        {% endblock about_description %}
-                    </p>
                 </div>
             </div>
             {% block about_image %}
-            <img class="img-fluid" src="{{ get_url(path="assets/img/ipad.png") }}" alt="..." />
+            <img class="img" src="{{ get_url(path="assets/img/aboutme.jpg") }}" alt="..." />
             {% endblock about_image %}
         </div>
     </section>
